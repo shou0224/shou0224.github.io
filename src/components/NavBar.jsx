@@ -1,3 +1,4 @@
+import {BrowserRouter, Link } from 'react-router-dom';
 import { Avatar, List, ListItem, ListItemIcon, ListItemText } from '@mui/material'
 import { Box } from '@mui/system'
 import HomeIcon from '@mui/icons-material/Home';
@@ -16,6 +17,7 @@ const NavBar = () => {
       id:2,
       icon: <Person2Icon />,
       name: "Profile",
+      path: "/profile"
     },
     {
       id:3,
@@ -29,13 +31,16 @@ const NavBar = () => {
       <List>
           {menuList.map(item => (
             <ListItem key={item.id}>
-              <ListItemIcon>{item.icon}</ListItemIcon>
-              <ListItemText>{item.name}</ListItemText>
+              <Link to={item.path}>
+                <ListItemIcon>{item.icon}</ListItemIcon>
+                <ListItemText>{item.name}</ListItemText>
+              </Link>
             </ListItem>
           ))}
       </List>
 
     </Box>
+    
   )
 }
 
