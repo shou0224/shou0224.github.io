@@ -24,6 +24,7 @@ const NavBar = ({onClick}) => {
       id:3,
       icon: <ArticleIcon />,
       name: "Portfolio",
+      path: "/portfolio"
     }
   ]
   return (
