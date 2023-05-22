@@ -12,6 +12,7 @@ const NavBar = () => {
       id:1,
       icon: <HomeIcon />,
       name: "Home",
+      path: "/"
     },
     {
       id:2,
