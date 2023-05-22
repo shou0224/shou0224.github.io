@@ -4,6 +4,7 @@ import { Box } from '@mui/system'
 import HomeIcon from '@mui/icons-material/Home';
 import Person2Icon from '@mui/icons-material/Person2';
 import ArticleIcon from '@mui/icons-material/Article';
+import EmailIcon from '@mui/icons-material/Email';
 import React from 'react'
 
 const NavBar = ({onClick}) => {
@@ -25,6 +26,12 @@ const NavBar = ({onClick}) => {
       icon: <ArticleIcon />,
       name: "Portfolio",
       path: "/portfolio"
+    },
+    {
+      id:4,
+      icon: <EmailIcon />,
+      name: "Contact",
+      path: "/contact"
     }
   ]
   return (
