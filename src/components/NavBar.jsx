@@ -6,7 +6,7 @@ import Person2Icon from '@mui/icons-material/Person2';
 import ArticleIcon from '@mui/icons-material/Article';
 import React from 'react'
 
-const NavBar = () => {
+const NavBar = ({onClick}) => {
   const menuList = [
     {
       id:1,
@@ -32,7 +32,7 @@ const NavBar = () => {
       <List>
           {menuList.map(item => (
             <ListItem key={item.id}>
-              <Link to={item.path}>
+              <Link to={item.path} onClick={onClick}>
                 <ListItemIcon>{item.icon}</ListItemIcon>
                 <ListItemText>{item.name}</ListItemText>
               </Link>

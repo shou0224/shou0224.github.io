@@ -10,7 +10,7 @@ const Header = () => {
   const [open, setOpen] = useState("")
   const toggle = () => {
     if(!isOpen) {
-      setOpen(<NavBar />)
+      setOpen(<NavBar onClick={toggle}/>)
       setArrows(<ArrowRightAltIcon sx={{fontSize: '80px', color: 'black'}}/>)
     } else {
       setOpen("")
