@@ -1,5 +1,5 @@
 import { Avatar, Typography } from '@mui/material'
-import { Box, textAlign } from '@mui/system'
+import { Box } from '@mui/system'
 import React, { useState } from 'react'
 
 const HomeIcon = () => {
