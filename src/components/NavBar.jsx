@@ -6,6 +6,7 @@ import Person2Icon from '@mui/icons-material/Person2';
 import ArticleIcon from '@mui/icons-material/Article';
 import EmailIcon from '@mui/icons-material/Email';
 import React from 'react'
+import avatar from '../Images/cap.png'
 
 const NavBar = ({onClick}) => {
   const menuList = [
@@ -36,7 +37,7 @@ const NavBar = ({onClick}) => {
   ]
   return (
     <Box sx={{width: '150px', height: '500px', backgroundColor: 'red', float: 'right'}}>
-      <Avatar />
+      <Avatar src={avatar} sx={{width: '50px', height: '50px', margin: '10px auto'}} />
       <List>
           {menuList.map(item => (
             <ListItem key={item.id}>

@@ -1,6 +1,7 @@
 import { Avatar, Typography } from '@mui/material'
 import { Box } from '@mui/system'
 import React, { useState } from 'react'
+import avatar from '../Images/cap.png'
 
 const HomeIcon = () => {
   const greet = ["H", "e", "l", "l", "o"]
@@ -19,7 +20,7 @@ const HomeIcon = () => {
       position: 'absolute', 
       top: 'calc(50% - 50px)', 
       left: 'calc(50% - 50px)'}}>
-      <Avatar sx={{margin: '10px auto'}}/>
+      <Avatar src={avatar} sx={{width: '100px',height: '100px', margin: '10px auto'}}/>
       <Typography variant='h3'>{greets}</Typography>
     </Box>
   )
